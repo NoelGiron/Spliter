@@ -9,6 +9,7 @@ public class Tarea {
         System.out.println("ingrese numeros separados por coma (,)");
         String cadena = entradaTeclado.next();
         String[] cadenaNumero = cadena.split(","); 
+        // A for loop that is iterating through the array of numbers.
         for (int i = 0; i < cadenaNumero.length; i++) {
             int number = Integer.parseInt(cadenaNumero[i]);
            
@@ -22,12 +23,19 @@ public class Tarea {
         }
         System.out.println("suma pares: " + pares);
         System.out.println("suma impares: " + impares);
+        // Comparing the sum of even numbers with the sum of odd numbers.
         if (pares>impares) {
             System.out.println("la suma de pares es mayor que impares");
         }else{
             System.out.println("la suma de impares es mayor que pares");
         }
     }
+    /**
+     * It reads an integer from the keyboard and returns it
+     * 
+     * @param mensaje The message that will be displayed to the user.
+     * @return The method is returning the number entered by the user.
+     */
     static int leerNumero(String mensaje){
         System.out.println(mensaje);
         try{
